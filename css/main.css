@@ -29,3 +29,7 @@ body, html {
 .header-icon-padding {
 	padding:24px 48px;
 }
+
+.w3-light-teal,.w3-hover-light-teal:hover {
+    color:#000!important;background-color:#769F9B!important
+}
