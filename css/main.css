@@ -13,3 +13,19 @@ body, html {
 .w3-bar .w3-button {
     padding: 16px;
 }
+
+.section-padding {
+	padding:128px 16px;
+}
+
+.section-margin {
+	margin-top:64px;
+}
+
+.header-padding {
+	padding:48px;
+}
+
+.header-icon-padding {
+	padding:24px 48px;
+}
