@@ -10,11 +10,12 @@
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-teal w3-card" id="myNavbar">
+  <div class="w3-bar teal w3-card" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT ME</a>
+      <a href="#projects" class="w3-bar-item w3-button">PROJECTS</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -25,9 +26,10 @@
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-teal w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block teal w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
@@ -37,7 +39,7 @@
     <span class="w3-jumbo w3-hide-small">Hi, I'm Douglas Matsumoto</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Welcome to my webpage!</span><br>
     <span class="w3-large">Take a look at my projects and get to know me better.</span>
-    <p><a href="#about" class="w3-button w3-teal w3-padding-large w3-large w3-margin-top w3-hover-opacity-off">Learn more about me</a></p>
+    <p><a href="#about" class="w3-button teal w3-padding-large w3-large w3-margin-top w3-hover-opacity-off">Learn more about me</a></p>
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large header-icon-padding">
     <i class="fab fa-github w3-hover-opacity"></i>
@@ -73,20 +75,37 @@
       <ul class="w3-ul w3-white">
         <li class="w3-padding-16 w3-left-align"><i class="fa fa-clock w3-large"> 4+ Years of Experience </i></li>
         <li class="w3-padding-16 w3-left-align"><i class="fa fa-globe w3-large"> Languages: Portuguese, English, French </i></li>
-        <li class="w3-padding-16 w3-left-align"><i class="fa fa-bolt w3-large"> Fast Learner </i></li>
+        <li class="w3-padding-16 w3-left-align"><i class="fa fa-car w3-large"> Interest in the Automotive Industry </i></li>
       </ul>
     </div>
   </div>
 </div>
 
 <!-- Projects Section -->
-<div class="w3-container w3-light-teal section-padding" id="projects">
+<div class="w3-container teal project-section-padding" id="projects">
   <h3 class="w3-center">PROJECTS</h3>
-    <div class="w3-half w3-padding-64 w3-card-4 w3-light-grey w3-round-large w3-hover-opacity">
-      <div class="w3-container w3-padding-16">
-        <img src="images/fridge.png" class="w3-col m2 l2 w3-left">
+    <div class="w3-third w3-left w3-padding-16 card-padding">
+      <div class="w3-container w3-padding-16 w3-card-4 w3-light-grey w3-round-large w3-hover-opacity">
+        <h3>Fridge Tracking</h3>
         <p>A personal webapp I've build to track items inside my fridge. It notifies when there are items close to the expiration date.</p>
-        <p>Built in Java using Spring framework and hosted on free cloud solutions (Heroku and Atlas MongoDB).
+        <p>Built in Java using Spring framework and hosted on free cloud solutions (Heroku and Atlas MongoDB).</p>
+        <img src="images/fridge.png" class="w3-center">
+      </div>
+    </div>
+    <div class="w3-third w3-left w3-padding-16 card-padding">
+      <div class="w3-container w3-padding-16 w3-card-4 w3-light-grey w3-round-large w3-hover-opacity">
+        <h3>Fridge Tracking</h3>
+        <img src="images/fridge.png" class="w3-image">
+        <p>A personal webapp I've build to track items inside my fridge. It notifies when there are items close to the expiration date.</p>
+        <p>Built in Java using Spring framework and hosted on free cloud solutions (Heroku and Atlas MongoDB).</p>
+      </div>
+    </div>
+    <div class="w3-third w3-left w3-padding-16 card-padding">
+      <div class="w3-container w3-padding-16 w3-card-4 w3-light-grey w3-round-large w3-hover-opacity">
+        <h3>Fridge Tracking</h3>
+        <img src="images/fridge.png" class="w3-image">
+        <p>A personal webapp I've build to track items inside my fridge. It notifies when there are items close to the expiration date.</p>
+        <p>Built in Java using Spring framework and hosted on free cloud solutions (Heroku and Atlas MongoDB).</p>
       </div>
     </div>
 </div>
@@ -104,7 +123,7 @@
         <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
         <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
         <p>
-          <button class="w3-button w3-teal" type="submit">
+          <button class="w3-button teal" type="submit">
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
           </button>
         </p>
@@ -117,7 +136,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-teal w3-padding-64">
+<footer class="w3-center teal w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <i class="fab fa-github w3-hover-opacity"></i>

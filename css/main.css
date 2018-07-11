@@ -18,6 +18,14 @@ body, html {
 	padding:128px 16px;
 }
 
+.project-section-padding {
+	padding:128px 128px;
+}
+
+.card-padding {
+	padding: 12px 12px;
+}
+
 .section-margin {
 	margin-top:64px;
 }
@@ -30,6 +38,10 @@ body, html {
 	padding:24px 48px;
 }
 
-.w3-light-teal,.w3-hover-light-teal:hover {
-    color:#000!important;background-color:#769F9B!important
+.light-teal,.w3-hover-light-teal:hover {
+    color:#000!important;background-color:#66b2b2!important
 }
+
+.border-teal,.hover-border-teal:hover{border-color:#008080!important}
+.text-teal,.hover-text-teal:hover{color:#008080!important}
+.teal,.hover-teal:hover{color:#fff!important;background-color:#008080!important}
