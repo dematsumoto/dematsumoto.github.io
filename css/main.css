@@ -45,3 +45,7 @@ body, html {
 .border-teal,.hover-border-teal:hover{border-color:#008080!important}
 .text-teal,.hover-text-teal:hover{color:#008080!important}
 .teal,.hover-teal:hover{color:#fff!important;background-color:#008080!important}
+
+a:link {
+    text-decoration: none;
+}
