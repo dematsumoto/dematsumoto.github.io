@@ -19,11 +19,11 @@ body, html {
 }
 
 .project-section-padding {
-	padding:128px 128px;
+	padding:128px 48px;
 }
 
 .card-padding {
-	padding: 12px 12px;
+	padding: 64px 12px;
 }
 
 .section-margin {
