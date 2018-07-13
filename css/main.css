@@ -22,8 +22,13 @@ body, html {
 	padding:128px 48px;
 }
 
-.card-padding {
+.cards-padding {
 	padding: 64px 12px;
+}
+
+.card {
+	padding: 64px 8px;
+	margin: 12px 12px;
 }
 
 .section-margin {
@@ -48,4 +53,14 @@ body, html {
 
 a:link {
     text-decoration: none;
+}
+
+.row {
+    display: flex; /* equal height of the children */
+}
+
+@media (max-width:600px){
+	.row {
+		display: block;
+	}
 }
