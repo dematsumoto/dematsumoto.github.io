@@ -6,17 +6,17 @@
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<div class="top-bar">
   <div class="w3-bar teal w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><i class="fas fa-home fa-lg"></i></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT ME</a>
       <a href="#projects" class="w3-bar-item w3-button">PROJECTS</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -30,16 +30,15 @@
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
     <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white header-padding">
-    <span class="w3-jumbo w3-hide-small">Hi, I'm Douglas Matsumoto</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Welcome to my webpage!</span><br>
+    <span class="w3-jumbo w3-hide-small">Welcome to my webpage</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Welcome to my webpage</span><br>
     <span class="w3-large">Take a look at my projects and get to know me better.</span>
-    <p><a href="#about" class="w3-button teal w3-padding-large w3-large w3-margin-top w3-hover-opacity-off">Learn more about me</a></p>
+    <p><a href="#about" class="w3-button teal w3-padding-large w3-large w3-margin-top w3-hover-opacity-off w3-round-large">Learn more about me</a></p>
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large header-icon-padding">
     <i class="fab fa-github w3-hover-opacity"></i>
@@ -82,53 +81,48 @@
 </div>
 
 <!-- Projects Section -->
-<div class="w3-container teal project-section-padding" id="projects">
+<div class="w3-container w3-light-grey project-section-padding" id="projects">
   <h3 class="w3-center">PROJECTS</h3>
-  <div class="w3-row-padding cards-padding w3-center row">
-    <div class="w3-third card w3-light-grey w3-round-large w3-hover-opacity">
-      <h4>Fridge Tracking Webapp</h4>
-      <p>A personal webapp I've build to track items inside my fridge. It notifies when there are items close to the expiration date.</p>
-      <p>Built in Java using Spring framework and hosted on free cloud solutions (Heroku and Atlas MongoDB).</p>
+  <div class="cards-padding w3-center row">
+    <div class="w3-third card w3-light-grey w3-round-large w3-card-4">
+      <figure>
+        <img src="images/fridge.jpeg" class="w3-image w3-round-large imagefade">
+        <figcaption class="overlay w3-round-large">
+          <h4>Fridge Tracker</h4>
+          <h5>Track the expire date of items in your Fridge. Webapp built in Java/Spring and hosted on cloud.</h5>
+          <a href="https://intense-citadel-51889.herokuapp.com" class="w3-button w3-round-large w3-light-grey">Visit Webapp <span><i class="fas fa-angle-right"></i></span></a>
+        </figcaption>
+        <div class="overlay w3-round-large"></div>
+      </figure>
     </div>
-    <div class="w3-third card w3-light-grey w3-round-large w3-hover-opacity">
-      <h4>Jenkins + Headless Browser Testing</h4>
-      <p>An article I wrote explaining how to get started using Jenkins to trigger automated validation with headless browser. A must have skill for modern softwares using Continuous Integration.</p>
+    <div class="w3-third card w3-light-grey w3-round-large w3-card-4">
+      <figure>
+        <img src="images/pipeline.jpeg" class="w3-image w3-round-large imagefade">
+        <figcaption class="overlay w3-round-large">
+          <h4>Continuous Integration</h4>
+          <h5>Article explaining how to get started using Jenkins to trigger automated validation with headless browser.</h5>
+          <a href="https://goo.gl/LAfyRr" class="w3-button w3-round-large w3-light-grey">Visit Article <span><i class="fas fa-angle-right"></i></span></a>
+        </figcaption>
+        <div class="overlay w3-round-large"></div>
+      </figure>
     </div>
-    <div class="w3-third card w3-light-grey w3-round-large w3-hover-opacity">
-      <h4>Line Follower Robot</h4>
-      <p>College Embedded Systems class final project where I've build a robot to follow the course of a line using the Ti MSP430 and a secondary board attached for motors, sensors, LCD and power controls.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey section-padding" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send me a message:</p>
-  <div class="w3-row-padding section-margin">
-    <div class="w3-half">
-      <br>
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-        <p>
-          <button class="w3-button teal" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
-      </form>
-    </div>
-    <div class="w3-half">
-      <img class="w3-image w3-round-large" src="images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+    <div class="w3-third card w3-light-grey w3-round-large w3-card-4">
+      <figure>
+        <img src="images/car.jpg" class="w3-image w3-round-large imagefade">
+        <figcaption class="overlay w3-round-large">
+          <h4>Line Follower Robot</h4>
+          <h5>College Embedded Systems class project. A robot to follow the course of a line using the Ti MSP430.</h5>
+          <a href="#" class="w3-button w3-round-large w3-light-grey">Source Code <span><i class="fas fa-angle-right"></i></span></a>
+        </figcaption>
+        <div class="overlay w3-round-large"></div>
+      </figure>
     </div>
   </div>
 </div>
 
 <!-- Footer -->
 <footer class="w3-center teal w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home" class="w3-button w3-light-grey w3-round-large"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <i class="fab fa-github w3-hover-opacity"></i>
     <i class="fab fa-linkedin w3-hover-opacity"></i>

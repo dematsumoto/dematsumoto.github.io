@@ -7,7 +7,11 @@ body, html {
 .bgimg-1 {
     background-position: center;
     background-size: cover;
-    background-image: url("../images/mac.jpg");
+    background-image:     linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/main.jpeg");
     min-height: 100%;
 }
 .w3-bar .w3-button {
@@ -27,7 +31,8 @@ body, html {
 }
 
 .card {
-	padding: 64px 8px;
+	position: relative;
+	padding: 0px 0px;
 	margin: 12px 12px;
 }
 
@@ -51,6 +56,10 @@ body, html {
 .text-teal,.hover-text-teal:hover{color:#008080!important}
 .teal,.hover-teal:hover{color:#fff!important;background-color:#008080!important}
 
+.dark-teal,.w3-hover-dark-teal:hover {
+    color:#000!important;background-color:#004F4F!important
+}
+
 a:link {
     text-decoration: none;
 }
@@ -64,3 +73,51 @@ a:link {
 		display: block;
 	}
 }
+
+figure {
+	margin:0em 0px;
+}
+
+.imagefade {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .4s ease;
+}
+
+.overlay {
+	background-color: #004F4F;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 3rem;
+    color: #fff;
+    z-index: 1;
+}
+
+.top-bar{
+	position:static;
+	width:100%;
+	z-index:1
+	}
+.top-bar {
+	top:0
+	}
