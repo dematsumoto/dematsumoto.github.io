@@ -65,7 +65,7 @@ a:link {
 }
 
 .row {
-    display: flex; /* equal height of the children */
+    display: flex;
 }
 
 @media (max-width:600px){
