@@ -121,3 +121,9 @@ figcaption {
 .top-bar {
 	top:0
 	}
+
+@media (max-width:450px){
+	.project-section-padding {
+    	padding: 128px 12px;
+	}
+}
